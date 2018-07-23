@@ -1,0 +1,16 @@
+<wordlist>
+
+
+<w f="255">nmap -sS localhost</w>    # default scan, uses SYN packets can get information withou completing TCP handshake process
+<w f="255">nmap -sT localhost</w>    # completes the normal TCP three way handshake process and calls connect(), which is a part of OS
+<w f="255">nmap -sU localhost</w>    # used to find open UDP ports
+<w f="255">nmap -sP localhost</w>    # only to check if host is live, can use ICMP
+<w f="255">nmap -sV localhost</w>    # Basic info about software running on target host
+<w f="255">nmap -p80, localhost</w> # To scan specific ports:
+<w f="255"></w>
+<w f="255">nmap -O localhost</w>     # just pass a paramater -O  OS Detection
+<w f="255">nmap -O -PN localhost</w> # pass another parameter -PN to make sure you dont send any ping request to host OS Detection
+<w f="255">nmap -sV localhost</w>
+
+
+</wordlist>
